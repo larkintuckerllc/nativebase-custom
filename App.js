@@ -1,6 +1,8 @@
 import Expo from 'expo';
-import { Button, Container, Content, Header, Text } from 'native-base';
+import { Button, Container, Content, Header, StyleProvider, Text } from 'native-base';
 import React from 'react';
+import getTheme from './native-base-theme/components';
+import custom from './native-base-theme/variables/custom';
 
 export default class App extends React.Component {
   componentDidMount() {
@@ -12,14 +14,16 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <Container>
-        <Header />
-        <Content>
-          <Button onPress={this.handlePress}>
-            <Text>Click Me!</Text>
-          </Button>
-        </Content>
-      </Container>
+      <StyleProvider style={getTheme(custom)}>
+        <Container>
+          <Header />
+          <Content>
+            <Button onPress={this.handlePress}>
+              <Text>Click Me!</Text>
+            </Button>
+          </Content>
+        </Container>
+      </StyleProvider>
     );
   }
 
