@@ -1,23 +1,28 @@
+import Expo from 'expo';
+import { Button, Container, Content, Header, Text } from 'native-base';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
+  componentDidMount() {
+    Expo.Font.loadAsync({
+      'Roboto': require('native-base/Fonts/Roboto.ttf'),
+      'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+    });
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
+      <Container>
+        <Header />
+        <Content>
+          <Button onPress={this.handlePress}>
+            <Text>Click Me!</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  handlePress = () => {
+  }
+}
