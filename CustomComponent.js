@@ -26,4 +26,4 @@ const defaultStyles = {
   },
 };
 
-export default connectStyle('MyTheme.CustomComponent', defaultStyles)(CustomComponent);
+export default connectStyle('My.CustomComponent', defaultStyles)(CustomComponent);

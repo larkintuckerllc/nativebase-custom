@@ -2,7 +2,7 @@ import customComponentTheme from './CustomComponent';
 
 export default () => {
   const theme = {
-    'MyTheme.CustomComponent': {
+    'My.CustomComponent': {
       ...customComponentTheme()
     },
   }
