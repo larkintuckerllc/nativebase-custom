@@ -11,11 +11,11 @@ const theme = {
   'myTheme.CustomComponent': {
     container: {
       flex: 1,
-      backgroundColor: 'black',
+      backgroundColor: 'blue',
     },
     textContent: {
       fontSize: 20,
-      color: 'white',
+      color: 'yellow',
     },
   }
 };

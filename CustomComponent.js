@@ -18,11 +18,11 @@ class CustomComponent extends Component {
 const defaultStyles = {
   container: {
     flex: 1,
-    backgroundColor: 'green',
+    backgroundColor: 'black',
   },
   textContent: {
     fontSize: 20,
-    color: 'red',
+    color: 'white',
   },
 };
 
