@@ -319,7 +319,7 @@ export default (variables = variable) => {
       marginRight: 0,
       color: variables.inverseTextColor,
       fontSize: variables.btnTextSize,
-      paddingHorizontal: 16,
+      paddingHorizontal: 60,
       backgroundColor: "transparent"
       // childPosition: 1
     },
