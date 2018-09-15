@@ -2,23 +2,17 @@ import Expo from 'expo';
 import { Button, Container, Content, Header, StyleProvider, Text } from 'native-base';
 import React from 'react';
 import CustomComponent from './CustomComponent';
-import getTheme from './native-base-theme/components';
+import getBaseTheme from './native-base-theme/components';
 import custom from './native-base-theme/variables/custom';
+import getMyTheme from './my-theme/components';
 
-const baseTheme = getTheme(custom);
+const baseTheme = getBaseTheme(custom);
+const myTheme = getMyTheme();
 const theme = {
   ...baseTheme,
-  'myTheme.CustomComponent': {
-    container: {
-      flex: 1,
-      backgroundColor: 'blue',
-    },
-    textContent: {
-      fontSize: 20,
-      color: 'yellow',
-    },
-  }
+  ...myTheme,
 };
+console.log(theme);
 
 export default class App extends React.Component {
   componentDidMount() {
