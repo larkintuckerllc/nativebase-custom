@@ -12,7 +12,6 @@ const theme = {
   ...baseTheme,
   ...myTheme,
 };
-console.log(theme);
 
 export default class App extends React.Component {
   componentDidMount() {

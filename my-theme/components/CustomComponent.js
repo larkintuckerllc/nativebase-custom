@@ -9,6 +9,5 @@ export default () => {
       color: 'yellow',
     },
   };
-
   return customComponentTheme;
 };
