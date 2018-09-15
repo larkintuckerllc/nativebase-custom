@@ -21,6 +21,14 @@ export default class App extends React.Component {
             <Button onPress={this.handlePress}>
               <Text>Click Me!</Text>
             </Button>
+            <Button style={{ backgroundColor: 'green' }} onPress={this.handlePress}>
+              <Text>Click Me in Green!</Text>
+            </Button>
+            <Button onPress={this.handlePress}>
+              <Text style={{ color: 'yellow' }}>
+                Click Me Text in Yellow!
+              </Text>
+            </Button>
           </Content>
         </Container>
       </StyleProvider>
